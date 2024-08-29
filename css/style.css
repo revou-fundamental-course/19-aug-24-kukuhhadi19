@@ -1,0 +1,459 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Roboto+Condensed:wght@300;400;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Fonts */
+    --primary-font: "Open Sans", sans-serif;
+    --secondary-font: "Roboto Condensed", sans-serif;
+
+    /* Background Color */
+    --bg-black: #161616;
+    --bg-dark-black: #1c1c1c;
+    --bg-white: #fff;
+    --bg-blue: #00aded;
+    --bg-gray: #888888;
+
+    /* Color */
+    --text-white: #fff;
+    --text-black: #111111;
+    --text-blue: #00aded;
+    --text-dark-gray: #333333;
+    --text-gray: #888888;
+    --text-gold: rgb(251, 214, 7);
+}
+
+body {
+    font-family: var(--primary-font);
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 92px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 3rem;
+}
+
+h3 {
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.75rem;
+    letter-spacing: 1px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-btn {
+    padding: 16px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: var(--bg-blue);
+    display: inline-block;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-decoration: none;
+    box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+    color: var(--text-white);
+}
+
+.main-btn:hover {
+    background-color: var(--bg-white);
+    color: var(--text-black);
+}
+
+.white-btn {
+    padding: 16px 20px;
+    border-radius: 5px;
+    font-size: 15 px;
+    background-color: transparent;
+    display: inline-block;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+    text-decoration: none;
+    color: var(--text-white);
+    border: 1px solid #fff;
+}
+
+.white-btn:hover {
+    background-color: var(--bg-white);
+    color: var(--text-black);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li {
+    outline: none;
+}
+
+input,
+button {
+    outline: none;
+    border: none;
+}
+
+input:focus {
+    box-shadow: none;
+}
+
+/* Navbar */
+.header-wrapper .navbar {
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    height: 80px;
+    background-color: var(--bg-white);
+}
+
+.header-wrapper .nav-item {
+    margin: 0 14px;
+}
+
+.header-wrapper .nav-item .nav-link {
+    color: var(--text-black);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: var(--primary-font);
+}
+
+.header-wrapper .nav-item .nav-link:hover {
+    border-bottom: 2px solid var(--bg-blue);
+}
+
+.header-wrapper .nav-item .nav-link.active {
+    border-bottom: 2px solid var(--bg-blue);
+}
+
+.header-wrapper .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* Banner */
+.banner-wrapper {
+    background-position: 50%;
+    background-size: 1600px;
+    height: 250px;
+    padding-bottom: 40px;
+    background-image: url('../assets/alumni_revou.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+/* Work */
+.work-wrapper {
+    margin-bottom: 2rem;
+}
+
+.work-wrapper .work i {
+    font-size: 20px;
+    color: var(--text-blue);
+}
+
+.work-section,
+.contact-section {
+    margin-top: 5rem;
+}
+
+.work-section .leaf,
+.contact-section .leaf {
+    position: relative;
+}
+
+.work-section .heading .div1,
+.work-section .heading .div2,
+.contact-section .heading .div1,
+.contact-section .heading .div2 {
+    width: 50%;
+    height: 2px;
+    background-color: var(--bg-gray);
+}
+
+.work-section i,
+.contact-section i {
+    color: var(--bg-blue);
+    font-size: 24px;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: 1.2rem;
+}
+
+.projects {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.projects .heading,
+.client-wrapper .heading,
+.about-wrapper .heading,
+.blog-wrapper .heading {
+    position: relative;
+}
+
+.projects .line,
+.client-wrapper .line,
+.about-wrapper .line,
+.blog-wrapper .line {
+    width: 18%;
+    height: 2px;
+    background-color: var(--bg-blue);
+    position: absolute;
+    left: 42%;
+    top: 4.5rem;
+}
+
+.projects .card {
+    height: 100%;
+    background: rgb(227, 226, 226);
+    border: none;
+}
+
+.projects .card-body h4 {
+    font-size: 16px;
+}
+
+.projects .card-body a {
+    color: var(--text-blue);
+}
+
+.projects p {
+    font-size: 14px;
+}
+
+.client-wrapper {
+    margin-bottom: 5rem;
+}
+
+.client-wrapper .clients-img img {
+    margin-top: 3rem !important;
+}
+
+.about-wrapper {
+    margin-bottom: 5rem;
+}
+
+.blog-wrapper a {
+    color: var(--text-black);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.blog-wrapper a:hover {
+    text-decoration: underline;
+}
+
+/* Contact */
+.contact-section {
+    color: var(--text-white);
+    background-color: var(--bg-black);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.contact-section .enevlope {
+    position: relative;
+}
+
+.contact-section .heading .div1,
+.contact-section .heading .div2 {
+    width: 50%;
+    height: 2px;
+    background-color: var(--bg-gray);
+}
+
+.contact-section .social-icon {
+    color: var(--bg-blue);
+    font-size: 24px;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: 1.2rem;
+}
+
+.contact-section .contact .social-icon {
+    background-color: var(--bg-white) !important;
+}
+
+.contact-section .contact .main-btn {
+    background-color: var(--bg-white);
+    color: var(--text-black);
+}
+
+@media (max-width: 1400px) {}
+
+@media (max-width: 1230px) {}
+
+@media (max-width: 991px) {
+    h1 {
+        font-size: 74px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .header-wrapper .navbar-menu {
+        text-align: center;
+        background-color: var(--bg-white);
+        padding-bottom: 20px;
+        margin-top: 28px;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    }
+
+    .header-wrapper .nav-item .nav-link {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 54px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    margin-top: 0;
+}
+
+.video {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    margin: 100px;
+}
+
+source {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-set {
+    width: 33%;
+    float: left;
+}
+
+.map {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    margin: 10px;
+}
+
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.map-set {
+    width: 100%;
+    float: left;
+}
+
+#footer .footer-top .footer-links {
+    margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#footer .footer-top .footer-links ul i {
+    padding-right: 2px;
+    color: #4ae3c6;
+    font-size: 18px;
+    line-height: 1;
+}
+
+#footer .footer-top .footer-links ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+#footer .footer-top .footer-links ul li:first-child {
+    padding-top: 0;
+}
+
+#footer .footer-top .footer-links ul a {
+    color: #fff;
+    transition: 0.3s;
+    display: inline-block;
+    line-height: 1;
+}
+
+#footer .footer-top .footer-links ul a:hover {
+    color: #169;
+}
+
+.gradient-custom {
+    /* fallback for old browsers */
+    background: #3800df;
+
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to bottom right, rgb(164, 128, 222), rgb(79, 154, 219));
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to bottom right, rgb(132, 120, 219), rgb(221, 87, 245))
+}
+
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+    font-size: 1rem;
+    line-height: 2.15;
+    padding-left: .75em;
+    padding-right: .75em;
+}
+
+.card-registration .select-arrow {
+    top: 13px;
+}
+
